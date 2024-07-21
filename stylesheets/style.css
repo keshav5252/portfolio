@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Flex";
+}
+
+html {
+	scrollbar-width: thin;
+	scrollbar-color: #5833ff #010101;
+}
+
+.scrolled {
+	backdrop-filter: blur(40px);
+	background-color: #586161a1;
+	border-radius: 50px;
+	position: relative;
+	top: 10px;
+}
+
+/* ---------------------------------header----------------------------------- */
+
+header {
+	background-color: #010101;
+	z-index: 1000;
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+	height: 80px;
+	transition-duration: .4s;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 15px 20px;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition-duration: .2s;
+}
+
+nav ul li a:hover {
+	background-color: rgba(245, 245, 245, 0.1);
+}
+
+nav ul li:last-child a {
+	background-color: #603DEF;
+}
+
+nav ul li:last-child:hover a {
+	background-color: #4c2fc1;
+}
+
+nav span {
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+/* --------------------------------- main 1-------------------------------------- */
+
+main,
+footer {
+	background-color: #010101;
+	font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+}
+
+.main1 {
+	padding: 30px;
+	height: 600px;
+	display: flex;
+}
+
+
+.m1p {
+	flex: 1;
+}
+
+.m1content pre {
+	font-size: 4rem;
+	font-weight: bolder;
+	background: -webkit-linear-gradient(right, #FFFFFF, #603DEF 120%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 10px;
+}
+
+.m1content p {
+	color: rgba(255, 255, 255, .5);
+}
+
+.m1p1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.m1p2 {
+	justify-content: right;
+}
+
+.m1btns input {
+	padding: 15px 25px;
+	font-size: 15px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #603DEF;
+	color: white;
+	transition-duration: .2s;
+	margin-right: 5px;
+}
+
+.m1btns input:last-child {
+	background-color: transparent;
+	border: 1px dashed white;
+}
+
+.opbtn:hover {
+	background-color: #4c2fc1;
+}
+
+.m1btns input:last-child:hover {
+	/* transform: scale(1.02); */
+	/* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+	color: rgb(201, 201, 201);
+}
+
+/* --------------------------------- main 2-------------------------------------- */
+
+.main2 {
+	padding: 30px;
+	height: auto;
+	background-color: #030202;
+}
+
+.main2 h1,
+.styletxt {
+	background: -webkit-linear-gradient(right, #FFFFFF 85%, #603DEF);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 10px 0;
+}
+
+.main2 ul {
+	color: #F19CFF;
+}
+
+.main2 ul li {
+	opacity: .5;
+	font-size: 20px;
+	padding: 15px 5px;
+	list-style: inside;
+}
+
+.main2 ul li:last-child {
+	opacity: 1;
+}
+
+/* --------------------------------- main 3-------------------------------------- */
+
+.main3 {
+	padding: 30px;
+	padding-bottom: 30px;
+	padding-bottom: 0;
+	height: auto;
+	overflow: hidden;
+}
+
+.main3 div {
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	margin: 30px 0;
+	overflow-x: scroll;
+	scrollbar-width: none;
+}
+
+.main3 div img {
+	margin-right: 80px;
+	opacity: .75;
+	transition: .3s;
+}
+
+.main3 div img:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* --------------------------------- main 4-------------------------------------- */
+
+.main4 {
+	padding: 30px;
+	height: 500px;
+}
+
+/* --------------------------------- footer-------------------------------------- */
+
+footer>div {
+	height: 500px;
+	background-color: #030303;
+	border-radius: 50px 50px 0 0;
+	border-top: 1px solid #f5f5f55c;
+	position: relative;
+}
+
+.footer-down {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px;
+	border-top: 1px solid rgba(255, 255, 255, .02);
+}
+
+.footer-down p {
+	letter-spacing: 1px;
+}
+
+.footer-down a {
+	text-decoration: none;
+	color: yellowgreen;
+}
+
+.footer-down a:hover {
+	text-decoration: underline;
+}
