@@ -138,6 +138,16 @@ footer {
 	color: rgb(201, 201, 201);
 }
 
+@keyframes curso {
+	0%{ color: white; opacity: 1;}
+	50%{ color: whitesmoke; opacity: 0;}
+	100%{ color: whites; opacity: 1;}
+}
+
+.curso {
+	animation: curso 1s infinite;
+}
+
 /* --------------------------------- main 2-------------------------------------- */
 
 .main2 {
@@ -191,7 +201,7 @@ footer {
 
 .main3 div img {
 	margin-right: 80px;
-	opacity: .75;
+	opacity: .6;
 	transition: .3s;
 }
 
