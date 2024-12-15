@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <title>Keshav - Portfolio</title>
+</head>
+
+<body id="bd">
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="/logo.png" alt="logo">
+            </div>
+            <div class="nav-right">
+                <span id="ham" class="material-symbols-outlined">menu</span>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#sec3">About</a></li>
+                    <li><a href="#sec4">Skills</a></li>
+                    <li><a href="#sec5">Contact</a></li>
+                    <li id="close"><a href="/">Close</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div class="sec1-left">
+                <h1 class="target">Keshav Sharma</h1>
+                <p class="opac">A passionate Computer Science student crafting modern web solutions with creativity and code.
+                </p>
+                <div class="sec1-btns">
+                    <input type="button" class="getstarted" value="Get started">
+                </div>
+            </div>
+            <div class="sec1-right">
+                <img src="/hello.gif" alt="Saying hello">
+            </div>
+        </section>
+        <section id="sec2">
+            <i class="opac">"Success is not final, failure is not fatal,<br> It is the courage to continue that
+                counts."</i><br>
+            <br>
+            <i class="opac">~ Winston Churchill</i>
+        </section>
+        <section id="sec3">
+            <div id="sec3bg">
+                <div class="sec3bg-left">
+                    <ul>
+                        <li>
+                            <a>Government sarvodaya Bal vidyalaya[ CBSE ]</a><br>
+                            <a>12<sup>th</sup> | 2022-2023</a>
+                        </li>
+                        <li class="active-status">
+                            <a>Inderprastha engineering college[ IPEC ]</a><br>
+                            <a>BTech CSE | 2024-2028</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec3bg-right">
+                    <img src="/picture.jpg" alt="image">
+                </div>
+            </div>
+        </section>
+        <section id="sec4">
+            <div class="sec4scroll">
+                <img src="/images/html.png" alt="html logo" title="HTML">
+                <img src="/images/css.png" alt="css logo" title="CSS">
+                <img src="/images/js.png" alt="js logo" title="Javascript">
+                <img src="/images/bootstrap.png" alt="bootstrap logo" title="Bootstrap">
+                <img src="/images/tailwind.png" alt="tailwind logo" title="Tailwind">
+                <img src="/images/react.png" alt="react logo" title="React">
+                <img src="/images/git.png" alt="git logo" title="Git">
+                <img src="/images/github.png" alt="github logo" title="Github">
+            </div>
+        </section>
+        <section id="sec5">
+            <div class="sec5line">
+                <svg class="space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M 0 5 Q 50 5 100 5" stroke="white" stroke-width=".08" fill="none" />
+                </svg>
+            </div>
+            <div class="sec5contact">
+                <form onsubmit="handleSubmit(event)" class="sec5contact-left">
+                    <h2>Contact me</h2>
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <textarea name="message" id="message" placeholder="Leave your message for me" required></textarea>
+                    <input type="submit" value="Submit" class="submitBtn">
+                </form>
+                <div class="sec5contact-right">
+                    <img src="/images/cp2.png" alt="contact us image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by Keshav - 2024</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
